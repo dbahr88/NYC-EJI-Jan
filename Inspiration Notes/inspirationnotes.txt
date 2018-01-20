@@ -1,0 +1,42 @@
+DESIGN TRENDS:
+https://www.airbnb.com/experiences/125861?source=p1&currentTab=all_tab&searchId=eae0889a-ec40-4d48-a3f8-9cc35f178376&recommended_instance_id=275968
+-CSS consitent across all listings
+-Images/ratings/prices/booking links remain static while left side (description) can be scrolled up and down
+-How are the 'similar experiences' decided? Is it similar because of location, price, keywords, something else?  Is this Javascript function? How is this done? 
+
+
+
+
+USER INTERACTION:
+https://www.rentalutions.com/
+-toggle between tabs without refreshing page
+-potential use of javascript program to keep users engaged without navigating away
+
+
+https://www.facebook.com/
+-Videos continuing running in smaller corner of the screen (if playing while scrolling down)
+-Prevents users from navigating away from content they began engagement with
+
+
+
+PROFESSIONAL FOCUS: REAL ESTATE:
+https://cozy.co/free-rental-listings-page
+-account signups available on each page
+-fantastic sidebar navigation that remains static
+https://www.rentalutions.com/
+-'keep tenants' animation on page
+-Incredible utility of left menu
+-javascript makes it expand and pop out when hovered upon
+
+
+API USAGE FOR SOLVING REAL LIFE PROBLEMS:
+http://www.nycparklife.com/streetparker/
+-Local problem of finding street parking
+-Google fusion API, is this a subset of the maps API?
+
+
+https://developers.google.com/maps/
+https://www.computersciencezone.org/50-most-useful-apis-for-developers/
+
+-Can be integrated onto most pages
+

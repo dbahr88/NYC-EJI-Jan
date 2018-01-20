@@ -1,0 +1,104 @@
+<!-- Bootstrap -->
+Document Start
+$(document).ready(function(){
+
+})
+Paste in HTML (in head)
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Jquery -->
+Document Start
+$(document).ready(function(){
+
+})
+Paste in HTML 
+(bottom of body)
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="jq_basic_ex.js"></script>
+(connect src document in second script tag)
+
+
+<!-- AJAX and APIs-->
+Document Start
+---------------------------
+Paste in HTML 
+(bottom of body)
+----------------------------
+
+<!-- Node and NPM -->command line 
+1. npm init : establishes package.json file that will hold dependencies
+2. npm i  ****** --save   installs dependent packages
+npm i request anotherpackage another --save.  (installs package)
+3.node filename.js (runs the file)
+3b. navigate to file then write:  nodemon filename.js (runs file with )
+4. var packagename = require('packagename')
+
+<!-- Constructors -->
+dsfasdfsdf
+asdfasdf
+asdf
+
+
+<!-- Import/Export -->
+
+in export file called exporter:  module.exports = 
+In file receiving import: 
+var filename = require('./exporter')
+
+
+<!-- boilerplate, used in all node/express applications -->
+var express = require('express');
+var parser = require('body-parser');
+
+var app = express();
+
+app.use(parser.json());
+
+
+<!-- On every node exress server, establishes 404 errors and establishes working routes-->
+app.get("*", function(req,res){
+	res.status(404).send('uh oh! page not found')
+});
+
+app.listen(3000, function(){
+	console.log('Example app listening on port 3000!')
+});
+
+<!-- setting up routes in express-->var express = require('express');
+var parser = require('body-parser');
+
+var app = express();
+
+app.use(parser.json());
+
+app.post("/submit", function(req,res){
+	console.log(req.body);
+	res.send("body of post is " + req.body.name)
+});
+
+
+<!-- displaying objects to DOM out of API -->
+
+<!--Setting up my routes for my application in this file-->
+
+//requiring express, which we installed from npm
+var express = require('express');
+//requiring path, which does not need an npm install because it is built into node
+var path = require('path');
+
+//storing express.Router() in a variable called router
+//Router() is a function built into express which can store and export routes
+var router = express.Router();
+
+//requiring our data object from our object.js file
+var obj = require('../models/object.js');
+
+//this is the connection from our client side to our server side here
+//we are saying that our home route is going to be our index.html file
+//this is how you set up where your routes are hitting
+//this is a get that is expecting a path to a file
+router.get('/', function(req,res){
+	res.sendFile(path.join(__dirname, '../../client/public/index.html'));
+});
